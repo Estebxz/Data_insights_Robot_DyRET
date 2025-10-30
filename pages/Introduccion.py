@@ -1,4 +1,3 @@
-import os
 import streamlit as st
 from components.UI.boton_flotante import Boton_flotante
 

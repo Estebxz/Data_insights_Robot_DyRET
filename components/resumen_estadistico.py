@@ -25,8 +25,6 @@ def generar_informe_dataset(ruta_csv: str):
     b.metric("Número de columnas", n_columnas, delta= "7 columnas nuevas", border=True)
     c.metric("Numero de nulos", 0, delta_color="off", delta= "0", border=True)
     d.metric("Numero de duplicados", duplicados, delta_color="off", delta="0" , border=True)
-    
-    st.divider()
 
     distribucion_tipos(ruta_csv)
     msg_temp("✅ Informe generado correctamente", tipo="success", duracion=2)

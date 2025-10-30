@@ -132,5 +132,4 @@ Estos resultados permiten optimizar el **control, equilibrio y eficiencia del mo
 haciendo que el robot responda de manera más inteligente a cada tipo de terreno.
 """)
 
-st.divider()
 Boton_flotante()
