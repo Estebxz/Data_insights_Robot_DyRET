@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-from components.msg_temporal import msg_temp
+from components.UI.msg_temporal import msg_temp
 
 @st.cache_data
 def load_data():

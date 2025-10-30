@@ -6,7 +6,6 @@ def mapa_interactivo():
     latitude = -27.4698
     longitude = 153.0251
     
-    # Crear mapa base
     m = folium.Map(location=[latitude, longitude], zoom_start=4, min_zoom=4, max_zoom=16)
 
     folium.Marker(

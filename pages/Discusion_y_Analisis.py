@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-from components.boton_flotante import Boton_flotante
+from components.UI.boton_flotante import Boton_flotante
 
 st.title("DISCUSIÓN Y ANÁLISIS")
 st.header("Hallazgos Principales")
@@ -47,6 +47,7 @@ st.markdown("""
 
 etapas = [
     ("Arena:", "Superficie blanda y poco compacta; fuerzas delanteras irregulares y dispersas, traseras elevadas (≈70–75 N). El robot redistribuye carga hacia atrás para compensar la pérdida de apoyo. Concreto: Terreno rígido y estable; fuerzas limpias y constantes (delanteras ≈25–35 N, traseras ≈72–80 N). Locomoción más eficiente y equilibrada."),
+    ("Concreto:", "Superficie dura, homogénea y tiene una mínima deformación. La fuerza en las patas delanteras es mucho más estable y mayor (≈25–35 N), la fuerza en las patas traseras mantiene valores similares (≈72–80 N) con oscilaciones periódicas muy regulares. Además, tiene señales o valores mucho más limpios y con una amplitud constante lo que puede ser debido a que el robot cuenta con una mayor adherencia y realiza un tracción uniforme."),
     ("Césped:", "Superficie semiblanda; fuerzas delanteras moderadas (≈18–26 N) y traseras más altas (≈78–88 N). Buen desempeño con ligera pérdida de eficiencia por compresibilidad."),
     ("Mulch (mantillo orgánico):", " Terreno fibroso e inestable; fuerzas delanteras irregulares (≈17–25 N) y traseras fluctuantes (≈74–82 N). Se presentan deslizamientos intermitentes y mayor esfuerzo de corrección."),
     ("Grava:", "Terreno granular con buena fricción; fuerzas delanteras cíclicas (≈18–25 N) y traseras regulares (≈78–86 N). Buena tracción con microajustes para estabilidad."),
@@ -90,16 +91,18 @@ Se observa que las patas se mueven en **pares diagonales**, como muchos animales
 trabajando juntas una pata delantera y la trasera opuesta.
 """)
 
+
 st.markdown("""
 - 🦵 **Pata trasera derecha:** soporta más peso y empuja con mayor fuerza, siendo esencial para el **equilibrio** del robot.  
 - 🦶 **Pata delantera izquierda:** se encarga de **mantener la estabilidad** y adaptarse a las irregularidades del terreno.  
 - ⚙️ **Pares diagonales:** las otras dos patas completan el ciclo de la marcha, coordinadas con el primer par.
 """)
-
-st.success("""
+st.info("""
 En conjunto, el robot camina con un **patrón de trote estable**, alternando patas diagonales.  
 Este tipo de marcha mejora la **estabilidad dinámica** y permite un **uso más eficiente de la energía**.
 """)
+
+st.divider()
 
 st.subheader("Diferencias entre patas")
 st.markdown("""
@@ -115,6 +118,8 @@ En conjunto, cada par de patas cumple una función específica:
 las traseras impulsan, y las delanteras estabilizan y controlan la dirección.
 """)
 
+st.divider()
+
 st.subheader("En resumen")
 st.markdown("""
 El robot **ajusta su forma de caminar** según el tipo de superficie que enfrenta.  
@@ -122,8 +127,10 @@ Los sensores registran con gran detalle **cómo interactúan las patas con el te
 y esta información es clave para **mejorar su locomoción** y **adaptarse a distintos entornos**.
 """)
 
-st.success("""
+st.info("""
 Estos resultados permiten optimizar el **control, equilibrio y eficiencia del movimiento**, 
 haciendo que el robot responda de manera más inteligente a cada tipo de terreno.
 """)
+
+st.divider()
 Boton_flotante()

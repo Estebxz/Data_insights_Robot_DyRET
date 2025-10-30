@@ -1,6 +1,6 @@
 import streamlit as st
 import polars as pl
-from components.msg_temporal import msg_temp
+from components.UI.msg_temporal import msg_temp
 from components.distribucion_tipos import distribucion_tipos
 
 ruta_csv = "data/df_qcat_filtrado.csv"

@@ -2,17 +2,17 @@ import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 
-from components.msg_temporal import msg_temp
+from components.UI.msg_temporal import msg_temp
 
 @st.cache_data
 def load_data():
     df = pd.read_csv("data/df_qcat_filtrado.csv")
 
     patas = {
-        'FL': ('Izquierda delantera', '#FAEE82'),
-        'FR': ('Derecha delantera', '#F7CCA6'),
-        'BL': ('Izquierda trasera', '#DDCDFF'),
-        'BR': ('Derecha trasera', '#94D8E0')
+        'FL': ('Pata Izquierda delantera', '#FAEE82'),
+        'FR': ('Pata Derecha delantera', '#F7CCA6'),
+        'BL': ('Pata Izquierda trasera', '#DDCDFF'),
+        'BR': ('Pata Derecha trasera', '#94D8E0')
     }
 
     superficies = {

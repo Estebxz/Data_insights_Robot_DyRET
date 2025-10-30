@@ -1,6 +1,6 @@
 import os
 import streamlit as st
-from components.boton_flotante import Boton_flotante
+from components.UI.boton_flotante import Boton_flotante
 
 st.title("INTRODUCCIÓN Y PLANTEAMIENTO DEL PROBLEMA")
 

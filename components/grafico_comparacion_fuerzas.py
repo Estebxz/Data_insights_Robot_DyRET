@@ -79,18 +79,14 @@ def grafico_comparacion_fuerzas():
             row=row, col=col
         )
 
-        fig.update_xaxes(title_text="Tiempo (s)", row=row, col=col)
-        #fig.update_yaxes(title_text="Fuerza promedio (N)", row=row, col=col)
+        fig.update_xaxes(title_text="Tiempo (s)", row=row, col=col)         
 
     fig.update_layout(
         height=800,
         width=1400,
         title=dict(
             text=f"Componentes de Fuerza Promedio (Fx, Fy, Fz) por Pata - Terreno: {superficie_sel}"
-        ),
-        hovermode="x unified",
-        template="plotly_white",
-        legend=dict(orientation='h', yanchor="bottom", y=1.03, xanchor="right", x=1),
+        )
     )
 
     st.plotly_chart(fig)

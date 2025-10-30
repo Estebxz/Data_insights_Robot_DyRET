@@ -1,5 +1,5 @@
 import streamlit as st
-from components.boton_flotante import Boton_flotante
+from components.UI.boton_flotante import Boton_flotante
 
 st.title("REFERENCIAS BIBLIOGRÁFICAS")
 st.header("Fuentes y Materiales Consultados")

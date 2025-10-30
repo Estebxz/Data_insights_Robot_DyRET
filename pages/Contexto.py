@@ -3,7 +3,7 @@ import streamlit as st
 from components.mapa import mapa_interactivo
 from components.plano import plano_tridimensional
 from components.tabla_superficies import tabla_superficies
-from components.boton_flotante import Boton_flotante
+from components.UI.boton_flotante import Boton_flotante
 
 st.title("DyRET LEGGED ROBOT TERRAIN CLASSIFICATION DATASET")
 mapa_interactivo()
