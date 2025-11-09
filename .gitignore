@@ -1,2 +1,7 @@
-venv/
-_pycache__/
+# Ignore Python bytecode cache folders
+__pycache__/
+**/__pycache__/
+
+# Ignore compiled Python files
+*.py[cod]
+*.pyo
