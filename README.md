@@ -3,7 +3,7 @@
 Aplicación web interactiva desarrollada con **Streamlit** para la **visualización, análisis y discusión de datos** relacionados con el robot DyRET. El objetivo principal es facilitar la interpretación de resultados mediante gráficos, métricas y conclusiones claras.
 
 🔗 **Demo en vivo:**  
-https://robot-dyret.streamlit.app/Discusion_y_Analisis
+https://robot-dyret.streamlit.app
 
 ---
 
