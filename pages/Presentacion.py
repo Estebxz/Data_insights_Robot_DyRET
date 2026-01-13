@@ -1,9 +1,7 @@
 import streamlit as st
 from components.UI.star_github import footer_component
 
-st.image("public/icons/logomark.svg", width=500)
-st.header("Análisis de Fuerzas Netas del Robot Cuadrúpedo DyRET")
-
+st.image("public/icons/logomark.svg", width="content")
 st.image("public/outside.png", width="content", output_format="JPEG")
 st.info("Repositorio original del proyecto en [CSIRO](https://data.csiro.au/collection/csiro:46885)")
 
