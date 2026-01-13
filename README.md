@@ -1,4 +1,5 @@
-# 🤖 Robot DyRET — Discusión y Análisis de Datos
+![Logomark](public/icons/logomark.svg)
+![Vista principal](public/images/insights_dyret.webp)
 
 Aplicación web interactiva desarrollada con **Streamlit** para la **visualización, análisis y discusión de datos** relacionados con el robot DyRET. El objetivo principal es facilitar la interpretación de resultados mediante gráficos, métricas y conclusiones claras.
 
