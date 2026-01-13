@@ -1,6 +1,5 @@
 # Ignore Python bytecode cache folders
 __pycache__/
-components//__pycache__
 **/__pycache__/
 
 # Ignore compiled Python files
